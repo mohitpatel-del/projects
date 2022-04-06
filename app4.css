@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+body {
+    font-family: 'Gamja Flower', cursive;
+}
+
+
+/*button*/
+
+.btn-contactMe {
+    background: #97ffd2;
+    color: #02ffb3;
+    font-size: 2.5rem;
+}
+
+.btn-exploreProjects {
+    background: #d7abc0;
+    color: #e64178;
+    font-size: 1.6rem;
+}
+
+
+/*on hover styles*/
+
+.btn-exploreProjects:hover {
+    color: #ff5ba8;
+    background: #e64178;
+}
+
+.btn-contactMe:hover,
+.icon:hover {
+    color: #97ffd2;
+    background: #02ffb3;
+}
+
+.icon {
+    color: #02ffb3;
+}
+
+
+/*footer*/
+
+.footer-section {
+    background: #9fb0fe;
+    color: #6583fe;
+}
+
+
+/*animations*/
+
+
+/*sun icon*/
+
+.rotate-center {
+    -webkit-animation: rotate-center 30s ease-in-out infinite both;
+    animation: rotate-center 30s ease-in-out infinite both;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/*development image*/
+
+.flip-in-ver-left {
+    -webkit-animation: flip-in-ver-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 6s both;
+    animation: flip-in-ver-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 6s both;
+}
+
+@-webkit-keyframes flip-in-ver-left {
+    0% {
+        -webkit-transform: rotateY(80deg);
+        transform: rotateY(80deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flip-in-ver-left {
+    0% {
+        -webkit-transform: rotateY(80deg);
+        transform: rotateY(80deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+        opacity: 1;
+    }
+}
+
+
+/*desining image*/
+
+.flip-in-ver-right {
+    -webkit-animation: flip-in-ver-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 6s both;
+    animation: flip-in-ver-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 6s both;
+}
+
+@-webkit-keyframes flip-in-ver-right {
+    0% {
+        -webkit-transform: rotateY(-80deg);
+        transform: rotateY(-80deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flip-in-ver-right {
+    0% {
+        -webkit-transform: rotateY(-80deg);
+        transform: rotateY(-80deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+        opacity: 1;
+    }
+}
+
+
+/*styling and animating section*/
+
+.fade-in {
+    -webkit-animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 7.2s both;
+    animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 7.2s both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*envelop icon*/
+
+.wobble-hor-bottom {
+    -webkit-animation: wobble-hor-bottom 1.5s 2s infinite both;
+    animation: wobble-hor-bottom 1.5s 2s infinite both;
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+
+/*footer*/
+
+.slide-in-bottom {
+    -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 8s both;
+    animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 8s both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/*breakpoints and resaponsiveness application*/
+
+@media(max-width:1100px) {
+    /*image sizes, font sizes, padding, margin */
+    .development_img,
+    .designing_img {
+        width: 412px;
+    }
+}
+
+@media(max-width:770px) {
+    /*layout changes prevention,making col-12,image sizes,heading sizes*/
+    .development_img,
+    .designing_img {
+        width: 312px;
+    }
+    h1.display-3 {
+        font-size: 3.5rem;
+    }
+    h2.display-4 {
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:300px) {
+    /*making further changes in:::=layout changes prevention,making col-12,image sizes,heading sizes*/
+    .development_img,
+    .designing_img {
+        width: 212px;
+    }
+}

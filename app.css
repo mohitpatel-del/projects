@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat:100,200,300&display=swap');
+
+/*background-img-design*/
+
+
+/*section-1 styles*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.background_img {
+    background-image: linear-gradient(to top, rgba(98, 99, 104, 0.52), rgb(73, 72, 72) 81%), url("bg.jpg");
+    min-height: 700px;
+    background-position: center;
+    background-size: auto;
+}
+
+.main_button {
+    font-family: 'Heebo', sans-serif;
+}
+
+h4.display-5 {
+    font-size: 3rem;
+}
+
+#footer {
+    background: #494949;
+}
+
+.footer-line {
+    font-weight: 700;
+}
+
+
+/* hr tag */
+
+hr.style-seven {
+    overflow: visible;
+    /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr.style-seven:before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+.copyright-text {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*media Queries : Smartphone design*/
+
+@media (max-width:500px) {
+    .background_img {
+        min-height: 100vh;
+    }
+    h3.display-4 {
+        font-size: 2rem;
+    }
+    p.lead {
+        font-size: 0.8rem;
+    }
+    #img-1 {
+        max-width: 150px !important;
+    }
+    h4.display-5 {
+        font-size: 1.8rem;
+    }
+}
